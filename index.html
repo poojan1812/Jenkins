@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins, sans-serif
+}
+.header {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(255, 153, 0, 1), rgba(255, 168, 255, .3)), url(cloud.png);
+	background-size: 100% 100%;
+	position: relative;
+	clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0)
+}
+
+.header:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: .3;
+	z-index: -1;
+	background: linear-gradient(to right, #1e5799 0, #3ccdbb 0, #16c9f6 100%)
+}
+
+.header-section {
+	width: 100%;
+	height: inherit;
+	color: #fff;
+	text-align: center;
+	position: relative
+}
+
+.center-div {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%)
+}
+</style>
+</head>
+<body>
+<div class="header" id="topheader">
+           
+            <section class="header-section">
+                <div class="center-div">
+                    <h1 class="font-weight-bold">Welcome to the cloud</h1>
+                </div>
+            </section>
+        </div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
